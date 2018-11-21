@@ -8,13 +8,14 @@ const Block = require('./Block.js');
 let myBlockChain = new BlockChain.Blockchain();
 
 
+
 		for (var i = 1; i <= 10; i++) {
 		let blockTest = new Block.Block("Test Block - " + (i).toString());
 		  myBlockChain.addBlock(blockTest);
-		  			console.log(blockTest);
+		  			//console.log(blockTest);
 		}
 
-
+			console.log(myBlockChain);
 /******************************************
  ** Function for Create Tests Blocks   ****
  ******************************************/
