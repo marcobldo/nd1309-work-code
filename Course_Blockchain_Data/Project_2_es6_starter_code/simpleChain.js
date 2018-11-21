@@ -7,15 +7,19 @@ const Block = require('./Block.js');
 
 let myBlockChain = new BlockChain.Blockchain();
 
-setTimeout(function () {
-	console.log("Waiting...")
-}, 10000);
+
+		for (var i = 1; i <= 10; i++) {
+		let blockTest = new Block.Block("Test Block - " + (i).toString());
+		  myBlockChain.addBlock(blockTest);
+		  			console.log(blockTest);
+		}
+
 
 /******************************************
  ** Function for Create Tests Blocks   ****
  ******************************************/
 
-
+/*
 (function theLoop (i) {
 	setTimeout(function () {
 		let blockTest = new Block.Block("Test Block - " + (i + 1));
@@ -27,7 +31,7 @@ setTimeout(function () {
 		});
 	}, 10000);
   })(0);
-
+*/
 
 /***********************************************
  ** Function to get the Height of the Chain ****
